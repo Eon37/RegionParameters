@@ -1,52 +1,18 @@
+using System;
+
 namespace lab4
 {
-    interface ILang
+    interface IRegParams
     {
-
-    }
-
-    interface ICurrency
-    {
-
-    }
-
-    interface IDateFormat
-    {
-
-    }
-
-    interface ITimeFormat
-    {
-
-    }
-
-    interface IWeekStart
-    {
-
-    }
-
-    interface IMeasurementSystem
-    {
-
-    }
-
-    interface IReadingDirection
-    {
-
-    }
-
-    interface INameFormat
-    {
-
-    }
-
-    interface IEncoding
-    {
-
-    }
-
-    interface ITimeZone
-    {
-
+        string lang();
+        string currency(bool symb);
+        string dateFormat(DateTime dt);
+        string timeFormat(DateTime dt);
+        string weekStart();
+        bool isMetric();
+        string readingDirection();
+        string nameFormat(params string[] name);
+        string encoding(bool universal);
+        string timeZone();
     }
 }
