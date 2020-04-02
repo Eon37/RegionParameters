@@ -3,8 +3,9 @@ namespace lab4
     class outer
     {
         public static void Main()
-        {
-            Regions.Main(new string ("China"));
+        {   
+            System.Console.Write("Enter a country name: ");
+            Regions.Main(System.Console.ReadLine());
         }
     }
 

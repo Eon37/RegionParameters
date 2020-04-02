@@ -3,6 +3,9 @@ using System.Globalization;
 
 namespace lab4
 {
+    ///<summary>
+    ///Defines region settings for Germany
+    ///</summary>
     class De : IRegParams
     {
         string IRegParams.lang()
