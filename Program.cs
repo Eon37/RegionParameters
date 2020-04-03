@@ -10,7 +10,7 @@ namespace lab4
         ///<summary>
         ///Variable to keep and manipulate the input country name
         ///</summary>
-        static string countryName;
+        public static string countryName;
 
         ///<summary>
         ///Entry point
@@ -47,7 +47,7 @@ namespace lab4
         ///</summary>
         ///<param name="reg">A type that creates initialized region</param>
         ///<exception cref="System.FormatException">Thrown when the input name is incomplete</exception>
-        static void showDefaultSettings(CreateRegion reg)
+        public static void showDefaultSettings(CreateRegion reg)
         {
             Console.WriteLine(countryName);
             var creg = reg.createReg();
@@ -72,7 +72,7 @@ namespace lab4
         ///A type that creates initialized region
         ///</returns>
         ///<exception cref="System.NullReferenceException">Thrown when input name is incorrect or there are no country with entered name</exception>
-        static CreateRegion initReg (string regName)
+        private static CreateRegion initReg (string regName)
         {
             switch(regName)
             {
