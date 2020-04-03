@@ -13,8 +13,8 @@ namespace lab4
         ///<returns>
         ///Language of a region
         ///</returns>
-
         string lang();
+        
         ///<summary>
         ///Defines Currency
         ///</summary>
